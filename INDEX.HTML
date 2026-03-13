@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VP IT Consultancy – We have your Solution. Professional IT services including web development, software development, digital marketing, and more." />
+  <meta name="keywords" content="IT consultancy, web development, software development, digital marketing, cloud solutions, cybersecurity, Nepal, mobile app development" />
+  <meta name="author" content="VP IT Consultancy" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VP IT Consultancy – We have your Solution." />
+  <meta property="og:description" content="Professional IT services including web development, software development, digital marketing, cloud solutions, and more." />
+  <meta property="og:image" content="images/logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VP IT Consultancy – We have your Solution." />
+  <meta name="twitter:description" content="Professional IT services including web development, software development, digital marketing, cloud solutions, and more." />
+  <meta name="twitter:image" content="images/logo.png" />
+
+  <title>VP IT Consultancy – We have your Solution.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="VP IT Consultancy Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for New Projects
+      </div>
+      <h1 class="hero-title">
+        <span class="gradient-text">VP IT</span><br />Consultancy
+      </h1>
+      <p class="hero-slogan">" We have your Solution. "</p>
+      <p class="hero-desc">
+        From digital strategies to enterprise software — we turn your vision into powerful, scalable technology.
+      </p>
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-primary">Explore Services</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ SERVICES ░░ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+        <p class="section-desc">Comprehensive IT solutions tailored to drive your business forward.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom, responsive websites and web applications built with modern technologies and best practices.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Software Development</h3>
+          <p>Scalable, secure software solutions — from desktop apps to full-stack enterprise platforms.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Digital Marketing</h3>
+          <p>SEO, social media, paid ads, and content strategies that grow your brand and drive real results.</p>
+          <div class="card-glow"></div>
+        </div>
+
+<div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>IT Consulting</h3>
+          <p>Strategic technology consulting to help you make smart decisions and maximize your IT investments.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
+          <h3>Mobile App Development</h3>
+          <p>Native and cross-platform mobile apps for iOS and Android, designed for seamless user experience.</p>
+          <div class="card-glow"></div>
+        </div>
+
+<div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI & Automation</h3>
+          <p>Leverage AI tools and workflow automation to save time, reduce costs, and gain competitive advantage.</p>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section class="section section-dark" id="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-text reveal">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title" style="text-align:left;">Building the <span class="gradient-text">Future</span><br/>of Tech in Nepal</h2>
+          <p class="about-desc">VP IT Consultancy is a Kathmandu-based technology firm helping businesses across Nepal and beyond transform their ideas into powerful digital products. From startups to enterprises, we deliver custom software, robust web platforms, and end-to-end IT strategies.</p>
+          <p class="about-desc">With over 3 years of hands-on experience and 50+ successful projects, our team brings deep expertise across the full technology stack — always with a focus on quality, reliability, and long-term partnerships.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Client-first approach with transparent communication</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Agile delivery with on-time, on-budget results</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Post-launch support and maintenance included</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="about-stat-card">
+            <span class="about-stat-num gradient-text">50+</span>
+            <span class="about-stat-label">Projects Delivered</span>
+          </div>
+          <div class="about-stat-card">
+            <span class="about-stat-num gradient-text">3+</span>
+            <span class="about-stat-label">Years Experience</span>
+          </div>
+          <div class="about-stat-card">
+            <span class="about-stat-num gradient-text">10+</span>
+            <span class="about-stat-label">Technologies Used</span>
+          </div>
+          <div class="about-stat-card">
+            <span class="about-stat-num gradient-text">100%</span>
+            <span class="about-stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PORTFOLIO ░░ -->
+  <section class="section section-dark" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">A glimpse of what we've built for our clients.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <a href="https://expressdruckfrankfurt.de/en" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal" id="project-1">
+          <div class="portfolio-img">
+            <img src="images/expressdruck.jpg" alt="Copyshop FFM" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            <div class="portfolio-overlay">
+              <span class="visit-btn"><i class="fas fa-arrow-up-right-from-square"></i> Visit Site</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags">
+              <span class="tag">Web Development</span>
+              <span class="tag">E-Commerce</span>
+            </div>
+            <h3>Copyshop FFM</h3>
+            <p>A professional printing services platform serving Frankfurt, Germany — built for speed and efficiency.</p>
+            <span class="portfolio-link">expressdruckfrankfurt.de <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://nepalpg.com" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal" id="project-2">
+          <div class="portfolio-img">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-landmark"></i>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="visit-btn"><i class="fas fa-arrow-up-right-from-square"></i> Visit Site</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags">
+              <span class="tag">Web Development</span>
+              <span class="tag">Finance</span>
+            </div>
+            <h3>Nepal PG</h3>
+            <p>A fintech platform providing seamless payment gateway solutions for businesses across Nepal.</p>
+            <span class="portfolio-link">nepalpg.com <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://privacydokan.com" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal" id="project-3">
+          <div class="portfolio-img">
+            <div class="portfolio-placeholder">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="visit-btn"><i class="fas fa-arrow-up-right-from-square"></i> Visit Site</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags">
+              <span class="tag">Software</span>
+              <span class="tag">Privacy & Security</span>
+            </div>
+            <h3>Privacy Dokan</h3>
+            <p>A privacy-first marketplace platform helping users discover and manage privacy tools and services.</p>
+            <span class="portfolio-link">privacydokan.com <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TESTIMONIALS ░░ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Client Reviews</span>
+        <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+        <p class="section-desc">Real feedback from businesses we've helped grow.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"VP IT Consultancy delivered our e-commerce platform ahead of schedule. Their attention to detail and technical expertise were outstanding. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KM</div>
+            <div>
+              <span class="author-name">Klaus Müller</span>
+              <span class="author-role">Owner, Copyshop FFM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The team built a robust payment gateway that handles thousands of transactions daily without any issues. Their support and communication throughout the project was excellent."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div>
+              <span class="author-name">Rajesh Shrestha</span>
+              <span class="author-role">CEO, Nepal PG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"From concept to launch, VP IT was with us every step of the way. They understood our privacy-focused vision perfectly and built exactly what we needed."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <span class="author-name">Ankit Pradhan</span>
+              <span class="author-role">Founder, Privacy Dokan</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build <span class="gradient-text">Together</span></h2>
+        <p class="section-desc">Have a project in mind? We'd love to hear from you.</p>
+      </div>
+      <div class="contact-wrapper reveal">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Reach out to us through any of the channels below. We typically respond within 24 hours.</p>
+          <div class="contact-items">
+            <a href="tel:9846258162" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+977 9846258162</span>
+              </div>
+            </a>
+            <a href="mailto:vpitconsultancy@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">vpitconsultancy@gmail.com</span>
+              </div>
+            </a>
+          </div>
+          <div class="contact-social">
+            <a href="mailto:vpitconsultancy@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:9846258162" class="social-btn" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="How can we help you?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-circle-check"></i>
+            Message sent! We'll get back to you shortly.
+          </div>
+          <div class="form-error" id="formError">
+            <i class="fas fa-circle-exclamation"></i>
+            Something went wrong. Please email us directly at vpitconsultancy@gmail.com
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="VP IT Consultancy" class="footer-logo" />
+          <p>We have your Solution.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+            <li><a href="#services">IT Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <a href="tel:9846258162">+977 9846258162</a>
+          <a href="mailto:vpitconsultancy@gmail.com">vpitconsultancy@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> VP IT Consultancy. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
